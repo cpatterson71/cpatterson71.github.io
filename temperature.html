@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+      <nav class='row'>
+        <nav class='col-md-12' ALIGN='left'>
+          <a class="navbar-brand" href='/index.html'>Latitude </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Graphs
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/humidity.html">Humidity</a>
+                <a class="dropdown-item" href="/temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="/windspeed.html">Windspeed</a>
+                <a class="dropdown-item" href='/DataTable.html'>Data Table</a>
+              </div>
+            </div>
+        </nav>
+      </nav>
+    </nav>
+      <div class="container">
+        <div class="jumbotron">
+          <h2 class="display-4" style="text-align: center;">Latitude Vs. Max Temperature</h2>
+          <p class="lead" style="text-align: center;">
+          <div class='row' ALIGN='Center'>
+            <div class='col-md-6' ALIGN="Center">
+              <span>
+                <img src="images/scatplotlatitudemaxtemp.png" class="img-fluid" Align="center" alt="Humidity">
+                <figcaption class="figure-caption">Latitude Vs. Max Temperature</figcaption>
+              </span>
+            </div>
+          <div class='col-md-6'>
+              <p> This is the graph for Latitude vs. Max Temperature</p>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
