@@ -1,30 +1,96 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>My First Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Header -->
-  <h1>Hello World!</h1>
-
-  <!-- Image -->
-  <img src="http://en.spongepedia.org/images/thumb/3/33/Spongebob!!!.jpg/180px-Spongebob!!!.jpg" alt="Spongebob!" />
-  <br>
-
-  <!-- Link with New Tab -->
-  <a href="https://www.google.com" target="_blank">Opens new tab</a>
-  <br>
-
-  <!-- Bold Link -->
-  <strong><a href="https://www.youtube.com">This is a bold link</a></strong>
-  <br>
-
-  <!-- Placeholder link -->
-  <a href="#">This is placeholder link goes nowhere, for now</a>
-
+  <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+    <nav class='row'>
+      <nav class='col-md-12' ALIGN='left'>
+        <a class="navbar-brand" href='index.html'>Latitude </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Graphs
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="/humidity.html">Humidity</a>
+              <a class="dropdown-item" href="/temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="/cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="/windspeed.html">Windspeed</a>
+              <a class="dropdown-item" href='/DataTable.html'>Data Table</a>
+            </div>
+          </div>
+      </nav>
+      <div class="container">
+        <div class="jumbotron">
+          <h1 class="display-4" style="text-align: center;">Summary: Latitude vs. X</h1>
+          <p class="lead" style="text-align: center;">
+          <div class='row'>
+            <div class="col-md-6">
+              <span>
+                <img target='_blank' src="images/scatplotlatitudecloud.png" ALIGN="Left" alt="Cloudiness Map">
+              </span>
+            </div>
+            <div class="col-md-6">
+              <p>This webpage was desigined to display the results from data collected</p>
+              <p>during the data collection of lattitude versus various condtions.</p>
+              <p>Latitude was the constant during the recovery and displaying of data.</p>
+              <p>Data was retrieved from a JSON file from the openweather.com data site.</p>
+              <p> The data was parsed and tables were created for each of the graphs and are</p>
+              <p> included with the individual pages.</p>
+              <p>The varying parameters used to create the graphs are detailed here.</p>
+              <p> The parameters were: cloudiness, maximum temperature, and humidity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="jumbotron">
+          <h2 class="display-4" style="text-align: center;">Visualizations</h2>
+          <p class="lead" style="text-align: left;">
+          <div class='row' ALIGN='Center'>
+            <div class='col=md-3' ALIGN="Center">
+              <span>
+                <img src="images/scatplotlatitudemaxhumidity.png" class="img-fluid" alt="Humidity">
+                <figcaption class="figure-caption">Latitude Vs. Humidity</figcaption>
+              </span>
+            </div>
+            <div class='col=md-3' ALIGN='Center'>
+              <span>
+                <img src="images/scatplotlatitudecloud.png" class="img-fluid" alt="Cloudiness">
+                <figcaption class="figure-caption">Latitude Vs. Cloudiness</figcaption>
+              </span>
+            </div>
+            <div class='col=md-3' ALIGN='Center'>
+              <span>
+                <img src="images/scatplotlatitudemaxtemp.png" class="img-fluid" alt="Max Temperature">
+                <figcaption class="figure-caption">Latitude Vs. Max Temperature</figcaption>
+              </span>
+            </div>
+            <div class='col=md-3' ALIGN='Center'>
+              <span>
+                <img src="images/scatplotwindspeed.png" class="img-fluid" alt="Windspeed">
+                <figcaption class="figure-caption">Latitude Vs. Windspeed</figcaption>
+              </span>
+            </div>
+          </div>
+        </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>

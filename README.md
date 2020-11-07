@@ -1,1 +1,2 @@
-# cpatterson71.github.io
+# Web-Design-Challenge
+Web Development HW Oct 2020
